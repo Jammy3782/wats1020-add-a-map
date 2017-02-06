@@ -63,12 +63,43 @@
       <div class="container">
         <h1 id="home">Mt. Ranier Information</h1>
         <!-- TODO: Create an HTML structure that will trigger the Bootstrap
-                   carousel feature. http://getbootstrap.com/javascript/#carousel
+                   carousel feature. http://getbootstrap.com/javascript/#carousel -->
+        
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
 
-                   Bonus points if you go to the trouble of making nice captions
-                   for the images. If you are using the Mt. Rainier images, then
-                   there are readymade captions available from the Wikipedia
-                   source page. -->
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="http://www.outdoorproject.com/sites/default/files/styles/cboxshow/public/dsc_0386_0.jpg?itok=NqqMdc-1" alt="Mount_Rainier">
+      <div class="carousel-caption">
+      Explore the Summerland Trail at Mount Rainier National Park 
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://cdn.aarp.net/content/dam/travel/destination-images/mount-rainier/2014-01/1400-mount-rainier-wa-flowers.imgcache.rev1409258920002.web.jpg" alt="Mount_Rainier_7431">
+      <div class="carousel-caption">
+          Discover Wild Flowers 
+      </div>
+    </div>
+    ...
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
       </div>
     </div>
 
@@ -79,11 +110,31 @@
         &mdash; John Muir, Naturalist
       </blockquote>
       <div id="about" role="tabpanel">
+
       <!-- Create the HTML structure to trigger the Bootstrap tabs feature:
             http://getbootstrap.com/javascript/#tabs
 
             You will need to add HTML structure to show each of the divs below
             as a unique tab. -->
+       
+        
+        <div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">About</a></li>
+    <li role="presentation"><a href="#history" aria-controls="history" role="tab" data-toggle="tab">History</a></li>
+    <li role="presentation"><a href="#statistics" aria-controls="statistics" role="tab" data-toggle="tab">Statistics</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="description">About</div>
+    <div role="tabpanel" class="tab-pane" id="history">History</div>
+    <div role="tabpanel" class="tab-pane" id="Statistics">Statistics</div>
+  </div>
+
+</div>
 
         <div id="description">
           <h2>About</h2>
@@ -131,6 +182,8 @@
         <h2>Map</h2>
         <!-- TODO: Use Leaflet.js to add a map showing Mt. Rainier's location
                     http://leafletjs.com/examples/quick-start.html -->
+       
+        
         <div id="map-container"></div>
       </div>
 
@@ -148,7 +201,7 @@
       <hr>
 
       <footer>
-        <p>Made by Jane Student in 2015. This page uses images and text from <a href="http://en.wikipedia.org/wiki/Mount_Rainier">The Wikipedia Mt. Rainier Page</a>.</p>
+        <p>Made by Jamila Youngblood in 2017. This page uses images and text from <a href="http://en.wikipedia.org/wiki/Mount_Rainier">The Wikipedia Mt. Rainier Page</a>.</p>
       </footer>
     </div> <!-- /container -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
