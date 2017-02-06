@@ -1,6 +1,13 @@
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+
+
+body {
+    background-color: black;
+    color: darkgreen; 
+}
+h1 {
+color: green; 
+}
+ 
 
 #map-container { height: 180px; }
 
